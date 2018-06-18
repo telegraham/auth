@@ -10,16 +10,22 @@
 
   <body>
     <header>
+      <% if logged_in? %>
+        <%= logged_in_user.name %>
+      <% end %>
       <ul class="header-menu">
+        <% if !logged_in? %>
         <li>
           <%= link_to "Register", new_user_path %>
         </li>
         <li>
           <%= link_to "Login", new_session_path %>
         </li>
-        <li>
-          <%= button_to "Logout", destroy_session_path, method: :delete %>
-        </li>
+        <% else %>
+          <li>
+            <%= button_to "Logout", destroy_session_path, method: :delete %>
+          </li>
+        <% end %>
       </ul>
       <h1>Automatic Blog</h1>
     </header>
