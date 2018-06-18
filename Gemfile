@@ -56,3 +56,6 @@ gem "faker", "~> 1.8"
 
 # Added at 2018-06-17 21:53:47 -0400 by graham:
 gem "bcrypt", "~> 3.1"
+
+# Added at 2018-06-17 22:52:40 -0400 by graham:
+gem "normalize-rails", "~> 4.1"
