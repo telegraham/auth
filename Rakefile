@@ -4,3 +4,8 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+desc "drop, create, migrate, seed db"
+task :"db:nuke" => ["db:drop", "db:create", "db:migrate", "db:seed"] do
+
+end
