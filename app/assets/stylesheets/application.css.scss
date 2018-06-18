@@ -76,7 +76,7 @@ textarea {
 input[type=text], textarea {
   font-family: 'Inconsolata', monospace;
 }
-input[type=text] {
+input[type=text], input[type=password] {
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   width: 300px;
